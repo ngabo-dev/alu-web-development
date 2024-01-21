@@ -3,22 +3,62 @@ body {
     flex-direction: column;
     min-height: 100vh; /* Ensure body takes at least the full viewport height */
     margin: 0;
+    background-color: #f7f7f7;
 }
 
 main {
     display: flex;
     flex-direction: row;
     flex: auto;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
 }
 
 article {
     flex: 2;
     overflow-y: auto;
     padding: 10px; /* Add padding for better appearance */
+    border-right: 1px solid #ccc; /* Add a border to separate article and aside */
+    padding-right: 20px; /* Provide some space between border and content */
 }
 
 aside {
     flex: 1;
     overflow-y: auto;
     padding: 10px; /* Add padding for better appearance */
+    padding-left: 20px; /* Provide some space between border and content */
+}
+/* Additional styles for the entire page */
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-right: 15px;
+}
+
+.logo {
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+/* Additional styles for the footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
